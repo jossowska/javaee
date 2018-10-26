@@ -44,7 +44,7 @@ public class Comics {
 			this.price = price;
 		}
 		
-		public boolean setIsPopular() {
+		public boolean getIsPopular() {
 			return isPopular;
 		}
 		
