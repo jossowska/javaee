@@ -19,8 +19,14 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	response.setContentType("text/html");
 	
 	PrintWriter out = response.getWriter();
-	out.println("<html><body><h1></h1></body></html>");
+    out.println("<html><body><h1>Comics rules! </h1> <br>" +
+            "Menu: <br>" +
+            "<ul>" +
+            "<li><a href='add'>Add new Comic Book</a></li>" +
+            "<li><a href='allcomics'>View all cscomi</a></li>" +
+            "</ul>" +
+            "</body></html>");
+    out.close();
 	
-	out.close();
 	}
 }
