@@ -1,23 +1,35 @@
-package com.jossowska.javaee.domain;
+package com.jossowska.servletjspdemo.domain;
 
 import java.util.Date;
 
-public class Comics {
-
+public class ComicBook {
+	
+		private long id;
 		private String title;
 		private Date dateOfRelease;
 		private double price;
 		private boolean isPopular;
 		
-		public Comics() {
+		public ComicBook() {
 			super();
 		}
 		
-		public Comics(String title, Date dateOfRelease, double price, boolean isPopular) {
+		
+		public ComicBook(long id,String title, Date dateOfRelease, double price, boolean isPopular) {
+			
+			this.id = id;
 			this.title = title;
 			this.dateOfRelease = dateOfRelease;
 			this.price = price;
 			this.isPopular = isPopular;
+		}
+		
+		public long getId() {
+			return id;
+		}
+		
+		public void setId(long id) {
+			this.id = id;
 		}
 		
 		public String getTitle() {
