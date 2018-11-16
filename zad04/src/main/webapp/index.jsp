@@ -9,5 +9,6 @@
     </head>
     <body>
 		 <p><a href="getComicBookData.jsp">Add a comic book</a></p>
+		 <p><a href="showAllComics.jsp">Show all comics</a>
     </body>
 </html>
