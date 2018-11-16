@@ -11,7 +11,7 @@ public class SurveyService {
 
 
     public void addSurvey(Survey survey) {
-        Survey newSurvey = new Survey(survey.getUser(),survey.getFrom(), survey.getTo(),survey.getFrequency(), survey.getComments());
+        Survey newSurvey = new Survey(survey.getName(),survey.getFrom(), survey.getTo(),survey.getFrequency(), survey.getComments());
         db.add(newSurvey);
     }
     
