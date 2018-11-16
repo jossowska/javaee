@@ -18,12 +18,18 @@
 %>
 
 <p>Ankieta została przesłana </p>
-<p>Imię: ${survey.name} </p>
+<p>Użytkownik: ${survey.user} </p>
 <p>Od: ${survey.from} </p>
 <p>Do: ${survey.to }</p>
 <p>Częstotliwość: ${survey.frequency }</p>
 <p>Uwagi: ${survey.comments }</p>
 
+<p>
+  <a href="AllSurveys.jsp">Pokaż wszystkie ankiety</a>
+</p>
+<p>
+  <a href="Survey.jsp">Dodaj następną ankietę</a>
+</p>
 
 </body>
 </html>

@@ -13,7 +13,7 @@
 
 <form action="AddSurvey.jsp">
 
-  Imię: <input type="text" name="name" value="${survey.name}" /><br /><br/>
+  Użytkownik: <input type="text" name="user" value="${survey.user}" /><br /><br/>
   Jak długo używałeś produkt? <br/> Od: <input type="text"  name="from" value="${survey.from}" /> Do: <input type="text"  name="to" value="${survey.to}" /><br/><br/>
   Z jaką częstotliwością?<br/>
     <input type="radio" name="frequency" value="kilka razy dziennie">Kilka razy dziennie<br>
@@ -25,8 +25,11 @@
    <input type="checkbox" name="comments" value="Należy rozbudować produkt">Należy rozbudować produkt<br><br>
   
   <input type="submit" value=" Prześlij swoją ankietę! ">
+ 
   
 </form>
-
+<p>
+  <a href="AllSurveys.jsp">Pokaż wszystkie ankiety</a>
+</p>
 </body>
 </html>

@@ -3,7 +3,7 @@ package com.jossowska.servletjspdemo.domain;
 
 public class Survey {
 	
-		private String name;
+		private String user;
 		private String from;
 		private String to;
 		private String frequency;
@@ -14,21 +14,21 @@ public class Survey {
 		}
 		
 		
-		public Survey(String name,String from, String to, String frequency, String comments) {
+		public Survey(String user,String from, String to, String frequency, String comments) {
 			
-			this.name = name;
+			this.user = user;
 			this.from = from;
 			this.to = to;
 			this.frequency = frequency;
 			this.comments = comments;
 		}
 		
-		public String getName() {
-			return name;
+		public String getUser() {
+			return user;
 		}
 		
-		public void setName(String name) {
-			this.name = name;
+		public void setUser(String user) {
+			this.user = user;
 		}
 		
 		public String getFrom() {

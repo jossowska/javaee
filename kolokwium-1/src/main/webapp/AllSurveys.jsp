@@ -12,7 +12,7 @@
 <jsp:useBean id="storage" class="com.jossowska.servletjspdemo.service.SurveyService" scope="application" />
 <%
   for (Survey survey : storage.getAllSurveys()) {
-	  out.println("<p>Imię: " + survey.getName() + "; Od: " + survey.getFrom() + "; Do: " + survey.getTo() + "; Częstotliwość: " + survey.getFrequency() + "; Uwagi: " + survey.getComments() +"</p>");
+	  out.println("<p>Użytkownik: " + survey.getUser() + "; Od: " + survey.getFrom() + "; Do: " + survey.getTo() + "; Częstotliwość: " + survey.getFrequency() + "; Uwagi: " + survey.getComments() +"</p>");
   }
 %>
 <p>
