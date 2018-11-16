@@ -11,18 +11,18 @@
 <jsp:useBean id="storage" class="com.jossowska.servletjspdemo.service.SurveyService" scope="application" />
 <jsp:useBean id="survey" class="com.jossowska.servletjspdemo.domain.Survey" scope="session" />
 
-<form action="addSurvey.jsp">
+<form action="AddSurvey.jsp">
 
-  Nazwa: <input type="text" name="name" value="${survey.name}" /><br />
-  Jak długo używałeś produkt? <br/> Od: <input type="text"  name="from" value="${survey.from}" /> Do: <input type="text"  name="to" value="${survey.to}" /><br/>
+  Imię: <input type="text" name="name" value="${survey.name}" /><br /><br/>
+  Jak długo używałeś produkt? <br/> Od: <input type="text"  name="from" value="${survey.from}" /> Do: <input type="text"  name="to" value="${survey.to}" /><br/><br/>
   Z jaką częstotliwością?<br/>
     <input type="radio" name="frequency" value="kilka razy dziennie">Kilka razy dziennie<br>
     <input type="radio" name="frequency" value="kilka razy w tygodniu">Kilka razy w tygodniu<br>
-    <input type="radio" name="frequency" value="kilka razy w roku">Kilka razy w roku<br>
+    <input type="radio" name="frequency" value="kilka razy w roku">Kilka razy w roku<br><br/>
    Masz jakieś uwagi?<br/> 
-   <input type="checkbox" name="comments" value="poprawić">Należy poprawić grafikę<br>
-   <input type="checkbox" name="comments" value="zwiększyć">Należy zwiększyć częstość wydawania<br>
-   <input type="checkbox" name="comments" value="rozbudować">Należy rozbudować produkt<br><br>
+   <input type="checkbox" name="comments" value="Należy poprawić grafikę">Należy poprawić grafikę<br>
+   <input type="checkbox" name="comments" value="Należy zwiększyć częstość wydawania">Należy zwiększyć częstość wydawania<br>
+   <input type="checkbox" name="comments" value="Należy rozbudować produkt">Należy rozbudować produkt<br><br>
   
   <input type="submit" value=" Prześlij swoją ankietę! ">
   
