@@ -19,6 +19,11 @@ import com.jossowska.javaee.service.StorageService;
 @WebServlet(urlPatterns = "/data-comicbook")
 public class DataAddComicBook extends HttpServlet{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -42,7 +47,7 @@ public class DataAddComicBook extends HttpServlet{
 
 		ComicBook newComicBook = new ComicBook(id, title, dateOfRelease, price, isPopular);
 
-		s.addToDatabase(newComicBook);
+		s.addComicBook(newComicBook);
 		response.sendRedirect("all-comics");
 		out.close();
 	}

@@ -20,6 +20,8 @@
 <p>Comic book has been added to storage: </p>
 <p>Title: ${comic.title} </p>
 <p>Date of release: <jsp:getProperty name="comic" property="dateOfRelease"></jsp:getProperty></p>
+<p>Price: ${comic.price} </p>
+<p>Is popular?: ${comic.isPopular }</p>
 
 </body>
 </html>

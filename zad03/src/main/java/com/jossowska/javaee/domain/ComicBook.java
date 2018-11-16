@@ -1,4 +1,4 @@
-package com.jossowska.servletjspdemo.domain;
+package com.jossowska.javaee.domain;
 
 import java.util.Date;
 

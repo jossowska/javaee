@@ -12,3 +12,4 @@
 		 <p><a href="showAllComics.jsp">Show all comics</a>
     </body>
 </html>
+
