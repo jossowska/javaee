@@ -74,7 +74,7 @@ public class ComicBook {
 		return dateOfRelease;
 	}
 	
-	public void setDateOfBirth(String dateOfRelease) {
+	public void setDateOfRelease(String dateOfRelease) {
 		this.dateOfRelease = dateOfRelease;
 	}
 	
@@ -109,6 +109,10 @@ public class ComicBook {
 		return details;
 	}
 	
+	public void setDetails(Details details)
+	{
+		this.details = details;
+	}
 	
  	public ComicBook() {
  		super();

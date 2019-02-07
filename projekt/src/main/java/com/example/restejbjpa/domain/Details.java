@@ -48,7 +48,7 @@ public class Details {
 		return comicBook;
 	}
 
-	public void setBird(ComicBook comicBook) {
+	public void setComicBook(ComicBook comicBook) {
 		this.comicBook = comicBook;
 	}
 	
