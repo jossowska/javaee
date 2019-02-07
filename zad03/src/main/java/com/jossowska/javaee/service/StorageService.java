@@ -1,9 +1,9 @@
-package com.jossowska.servletjspdemo.service;
+package com.jossowska.javaee.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jossowska.servletjspdemo.domain.ComicBook;
+import com.jossowska.javaee.domain.ComicBook;
 
 public class StorageService {
 
