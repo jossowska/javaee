@@ -23,7 +23,7 @@ public class ComicBookRestService {
 	ComicBookManager cbm;
 	
 	@GET
-	@Path("/{id")
+	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public ComicBook getComicBook(@PathParam("id") Long id) {
 		
@@ -49,11 +49,11 @@ public class ComicBookRestService {
 	public Response addComicBook(ComicBook comicBook) {
 		cbm.addComicBook(comicBook);
 		
-		return Response.status(201).entity("ComicBoo").build();	
+		return Response.status(201).entity("ComicBook").build();	
 	}
 	
 	@DELETE
-	@Path("/{comicBookId")
+	@Path("/{comicBookId}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response deleteComicBook(@PathParam("comicBookId") Integer id) {
 		return Response.status(200).build();

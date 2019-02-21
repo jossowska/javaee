@@ -19,8 +19,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Entity
 @NamedQueries({
 	@NamedQuery(name = "comicBook.all", query = "Select c from ComicBook c"),
-	@NamedQuery(name = "comicBook.delete.all", query = "Delete from ComicBook "),
-	
+	@NamedQuery(name = "comicBook.delete.all", query = "Delete from ComicBook "),	
 	@NamedQuery(name = "comicBook.findByNumberOfComics", query = "Select cb from ComicBook cb where cb.numberOfComics = :numberOfComics")//,
 
 })

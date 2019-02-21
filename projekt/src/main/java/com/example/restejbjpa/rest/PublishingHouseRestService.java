@@ -23,9 +23,9 @@ public class PublishingHouseRestService {
 	ComicBookManager cbm;
 	
 
-
-	@Path("/{id}")
 	@GET
+	@Path("/{id}")
+	
 	@Produces(MediaType.APPLICATION_JSON)
 	public PublishingHouse getPublishingHouse(@PathParam("id") Long id){
 		PublishingHouse retrieved = cbm.getPublishingHouse(id);

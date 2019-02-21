@@ -32,7 +32,7 @@ public class DetailsRestService {
 	}
 	
 	@DELETE
-	public Response deletAllTails(){
+	public Response deleteAllDetails(){
 		cbm.deleteAllDetails();
 		return Response.status(Response.Status.OK).build();
 	}

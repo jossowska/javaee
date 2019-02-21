@@ -92,7 +92,7 @@ public class ComicBookManager {
 		return em.find(Creator.class, id);
 	}
 	
-	//znajduje wszystkich wlascicieli, ktorzy maja wiecej niz n zabawek
+
 	public List<Creator> findManyPublishingHouses(int n){
 		List<Creator> many = new ArrayList<>(); 
 		List<Creator> creators = new ArrayList<>();  

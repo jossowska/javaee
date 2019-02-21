@@ -43,7 +43,7 @@ public class CreatorRestService {
 	@GET
 	@Path("/manyPublishingHouses")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Creator getManyToys(){
+	public Creator getManyPublishingHouses(){
 		Creator retrieved = cbm.findManyPublishingHouses();
 		return retrieved;
 	}
@@ -51,7 +51,7 @@ public class CreatorRestService {
 	@GET
 	@Path("/manyPublishingHouses/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Creator> getManyToys(@PathParam("id") Long id){
+	public List<Creator> getManyPublishingHouses(@PathParam("id") Long id){
 		List<Creator> retrieved = cbm.findManyPublishingHouses(id.intValue());
 		return retrieved;
 	}
@@ -74,7 +74,7 @@ public class CreatorRestService {
 	public Response addCreator(Creator creator) {
 		cbm.addCreator(creator);
 
-		return Response.status(201).entity("Owner").build();
+		return Response.status(201).entity("Creator").build();
 	}
 	
 	@POST
