@@ -1,4 +1,4 @@
+Zadania realizowane w ramach ćwiczeń laboratoryjnych z przedmiotu : 
+
 # Technologie Java Enterprise
 
-Jagoda Ossowska
-250995
